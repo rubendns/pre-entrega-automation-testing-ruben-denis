@@ -1,0 +1,3 @@
+INFO     root:test_carrito.py:45 Carrito verificado: producto Sauce Labs Backpack agregado correctamente
+INFO     root:test_inventario.py:30 Inventario verificado: 6 productos encontrados
+INFO     root:test_login.py:24 Login exitoso: usuario standard_user

@@ -20,9 +20,17 @@ El proyecto incluye tres pruebas:
 - Selenium WebDriver
 - Pytest
 - pytest-html
-- Brave Browser
+- Google Chrome
 - Git y GitHub
 - Visual Studio Code
+
+## Configuración del navegador
+
+Las pruebas automatizadas utilizan Google Chrome mediante Selenium WebDriver.
+
+El navegador se inicia desde el archivo `utils/navegador.py` utilizando `webdriver.Chrome()`.
+
+Es necesario tener Google Chrome instalado para ejecutar las pruebas.
 
 ## Instalación
 
@@ -47,3 +55,17 @@ python -m pytest tests/ -v --html=reporte.html --self-contained-html
 ```
 
 El reporte se guarda en el archivo `reporte.html` y puede abrirse con un navegador.
+
+## Evidencias de ejecución
+
+El proyecto incluye un reporte HTML generado con pytest-html.
+
+Los tests guardan capturas de pantalla en la carpeta `capturas/` cuando ocurre un error.
+
+También se generan logs de ejecución en la carpeta `logs/`.
+
+Para ejecutar las pruebas y guardar los logs:
+
+```powershell
+python -m pytest tests/ -v --log-file=logs/ejecucion.log --log-file-level=INFO
+```
